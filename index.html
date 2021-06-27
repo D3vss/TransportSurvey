@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="welcome" class="slide">
+
+        <h3>Welcome! Click "Start" bach tbda</h3>
+        <div class="answers">
+            <div onclick="next()" class="emoji" id="emoji">
+                <h4>Start</h4>
+            </div>
+        </div>
+    </div>
+
+    <!--Start of questions-->
+
+
+
+    <div id="1" class="slide">
+
+        <h3>Voulez vous un service international?</h3>
+
+        <div id="a1" class="answers">
+            <div onclick="next()" class="emoji" id="emoji">
+                <h4>Oui</h4>
+            </div>
+            <div class="emoji" id="emoji">
+                <h4>Non</h4>
+            </div>
+        </div>
+    </div>
+    <!--End of question 1-->
+
+    <div id="2" class="slide">
+
+        <h3>Voulez vous un service international?</h3>
+
+        <div id="a2" class="answers">
+            <div onclick="next()" class="emoji" id="emoji">
+                <h4>Au depart</h4>
+            </div>
+            <div onclick="next()" class="emoji" id="emoji">
+                <h4>A l'arrivée</h4>
+            </div>
+        </div>
+    </div>
+    <!--End of question 2-->
+
+    <div id="3" class="slide">
+
+        <h3>Choisissez votre point de depart</h3>
+
+        <select name="cars" id="cars">
+            <option>   01 - Ain - Bourg-en-Bresse</option>
+           <option>    02 - Aisne - Laon</option>
+            <option>   03 - Allier - Moulins</option>
+            <option>   04 - Alpes-de-Haute-Provence - Digne</option>
+            <option>   05 - Hautes-Alpes - Gap</option>
+            <option>   06 - Alpes Maritimes - Nice</option>
+            <option>   07 - Ardèche - Privas</option>
+            <option>   08 - Ardennes - Charleville-Mézières</option>
+            <option>   09 - Ariège - Foix</option>
+           <option>    10 - Aube - Troyes
+            <option>   11 - Aude - Carcassonne</option>
+            <option>   12 - Aveyron - Rodez</option>
+            <option>   13 - Bouches-du-Rhône - Marseille</option>
+            <option>   14 - Calvados - Caen</option>
+            <option>   15 - Cantal - Aurillac</option>
+            <option>   16 - Charente - Angoulême</option>
+            <option>   17 - Charente-Maritime - La Rochelle</option>
+            <option>   18 - Cher - Bourges</option>
+            <option>   19 - Corrèze - Tulle</option>
+            <option>   2A - Corse-du-Sud - Ajaccio</option>
+            <option>   2B - Haute Corse - Bastia</option>
+            <option>   21 - Côte-d'Or - Dijon</option>
+            <option>   22 - Côtes d'Armor - St-Brieuc</option>
+            <option>   23 - Creuse - Guéret</option>
+            <option>   24 - Dordogne - Périgueux</option>
+            <option>   25 - Doubs - Besançon</option>
+            <option>   26 - Drôme - Valence</option>
+            <option>   27 - Eure - Evreux</option>
+            <option>   28 - Eure-et-Loir - Chartres</option>
+            <option>   29 - Finistère - Quimper</option>
+            <option>   30 - Gard - Nîmes</option>
+            <option>   31 - Haute Garonne - Toulouse</option>
+            <option>   32 - Gers - Auch</option>
+            <option>   33 - Gironde - Bordeaux</option>
+            <option>   34 - Hérault - Montpellier</option>
+            <option>   35 - Ille-et-Vilaine - Rennes</option>
+            <option>   36 - Indre - Châteauroux</option>
+            <option>   37 - Indre-et-Loire - Tours</option>
+            <option>   38 - Isère - Grenoble</option>
+            <option>   39 - Jura - Lons-le-Saunier</option>
+            <option>   40 - Landes - Mont-de-Marsan</option>
+            <option>   41 - Loir-et-Cher - Blois</option>
+            <option>   42 - Loire - St-Étienne</option>
+            <option>   43 - Haute Loire - Le Puy</option>
+            <option>   44 - Loire Atlantique - Nantes</option>
+            <option>   45 - Loiret - Orléans</option>
+            <option>   46 - Lot - Cahors</option>
+            <option>   47 - Lot-et-Garonne - Agen</option>
+            <option>   48 - Lozère - Mende</option>
+            <option>   49 - Maine-et-Loire - Angers</option>
+            <option>   50 - Manche - St-Lô</option>
+            <option>   51 - Marne - Châlons-sur-Marne</option>
+            <option>   52 - Haute Marne - Chaumont</option>
+            <option>   53 - Mayenne - Laval</option>
+            <option>   54 - Meurthe-et-Moselle - Nancy</option>
+            <option>   55 - Meuse - Bar-le-Duc</option>
+            <option>   56 - Morbihan - Vannes</option>
+             <option>  57 - Moselle - Metz</option>
+            <option>   58 - Nièvre - Nevers</option>
+            <option>   59 - Nord - Lille</option>
+            <option>   60 - Oise - Beauvais</option>
+            <option>   61 - Orne - Alençon</option>
+            <option>   62 - Pas-de-Calais - Arras</option>
+            <option>   63 - Puy-de-Dôme - Clermont-Ferrand</option>
+            <option>   64 - Pyrénées Atlantiques - Pau</option>
+            <option>   65 - Hautes Pyrénées - Tarbes</option>
+            <option>   66 - Pyrénées Orientales - Perpignan</option>
+            <option>   67 - Bas-Rhin - Strasbourg</option>
+            <option>   68 - Haut-Rhin - Colmar</option>
+            <option>   69 - Rhône - Lyon</option>
+            <option>   70 - Haute Saône - Vesoul</option>
+            <option>   71 - Saône-et-Loire - Mâcon</option>
+            <option>   72 - Sarthe - Le Mans</option>
+            <option>   73 - Savoie - Chambéry</option>
+            <option>   74 - Haute Savoie - Annecy</option>
+            <option>   75 - Paris - Paris</option>
+            <option>   76 - Seine Maritime - Rouen</option>
+            <option>   77 - Seine-et-Marne - Melun</option>
+            <option>   78 - Yvelines - Versailles</option>
+            <option>   79 - Deux-Sèvres - Niort</option>
+            <option>   80 - Somme - Amiens</option>
+            <option>   81 - Tarn - Albi</option>
+            <option>   82 - Tarn-et-Garonne - Montauban</option>
+            <option>   83 - Var - Toulon</option>
+            <option>   84 - Vaucluse - Avignon</option>
+            <option>   85 - Vendée - La Roche-sur-Yon</option>
+            <option>   86 - Vienne - Poitiers</option>
+            <option>   87 - Haute Vienne - Limoges</option>
+            <option>   88 - Vosges - Épinal</option>
+            <option>   89 - Yonne - Auxerre</option>
+            <option>   90 - Territoire de Belfort - Belfort</option>
+            <option>   91 - Essonne - Evry</option>
+            <option>   92 - Hauts-de-Seine - Nanterre</option>
+            <option>   93 - Seine-St-Denis - Bobigny</option>
+            <option>   94 - Val-de-Marne - Créteil</option>
+            <option>   95 - Val-D'Oise - Pontoise</option>
+            <option>   971 - Guadeloupe - Basse-Terre</option>
+            <option>   972 - Martinique - Fort-de-France</option>
+            <option>   973 - Guyane - Cayenne</option>
+            <option>   974 - La Réunion - Saint-Denis</option>
+            <option>   976 - Mayotte - Mamoudzou</option>
+       </select>
+
+        <div class="answers">
+            <div onclick="next()" class="emoji" id="suivant_depart">
+                <h4>Suivant</h4>
+            </div>
+        </div>
+    </div>
+    <!--End of question 3-->
+
+    <div id="4" class="slide">
+
+        <h3>Choisissez votre point d'arrivée</h3>
+        <select name="cars" id="cars">
+            <option>   01 - Ain - Bourg-en-Bresse</option>
+           <option>    02 - Aisne - Laon</option>
+            <option>   03 - Allier - Moulins</option>
+            <option>   04 - Alpes-de-Haute-Provence - Digne</option>
+            <option>   05 - Hautes-Alpes - Gap</option>
+            <option>   06 - Alpes Maritimes - Nice</option>
+            <option>   07 - Ardèche - Privas</option>
+            <option>   08 - Ardennes - Charleville-Mézières</option>
+            <option>   09 - Ariège - Foix</option>
+           <option>    10 - Aube - Troyes
+            <option>   11 - Aude - Carcassonne</option>
+            <option>   12 - Aveyron - Rodez</option>
+            <option>   13 - Bouches-du-Rhône - Marseille</option>
+            <option>   14 - Calvados - Caen</option>
+            <option>   15 - Cantal - Aurillac</option>
+            <option>   16 - Charente - Angoulême</option>
+            <option>   17 - Charente-Maritime - La Rochelle</option>
+            <option>   18 - Cher - Bourges</option>
+            <option>   19 - Corrèze - Tulle</option>
+            <option>   2A - Corse-du-Sud - Ajaccio</option>
+            <option>   2B - Haute Corse - Bastia</option>
+            <option>   21 - Côte-d'Or - Dijon</option>
+            <option>   22 - Côtes d'Armor - St-Brieuc</option>
+            <option>   23 - Creuse - Guéret</option>
+            <option>   24 - Dordogne - Périgueux</option>
+            <option>   25 - Doubs - Besançon</option>
+            <option>   26 - Drôme - Valence</option>
+            <option>   27 - Eure - Evreux</option>
+            <option>   28 - Eure-et-Loir - Chartres</option>
+            <option>   29 - Finistère - Quimper</option>
+            <option>   30 - Gard - Nîmes</option>
+            <option>   31 - Haute Garonne - Toulouse</option>
+            <option>   32 - Gers - Auch</option>
+            <option>   33 - Gironde - Bordeaux</option>
+            <option>   34 - Hérault - Montpellier</option>
+            <option>   35 - Ille-et-Vilaine - Rennes</option>
+            <option>   36 - Indre - Châteauroux</option>
+            <option>   37 - Indre-et-Loire - Tours</option>
+            <option>   38 - Isère - Grenoble</option>
+            <option>   39 - Jura - Lons-le-Saunier</option>
+            <option>   40 - Landes - Mont-de-Marsan</option>
+            <option>   41 - Loir-et-Cher - Blois</option>
+            <option>   42 - Loire - St-Étienne</option>
+            <option>   43 - Haute Loire - Le Puy</option>
+            <option>   44 - Loire Atlantique - Nantes</option>
+            <option>   45 - Loiret - Orléans</option>
+            <option>   46 - Lot - Cahors</option>
+            <option>   47 - Lot-et-Garonne - Agen</option>
+            <option>   48 - Lozère - Mende</option>
+            <option>   49 - Maine-et-Loire - Angers</option>
+            <option>   50 - Manche - St-Lô</option>
+            <option>   51 - Marne - Châlons-sur-Marne</option>
+            <option>   52 - Haute Marne - Chaumont</option>
+            <option>   53 - Mayenne - Laval</option>
+            <option>   54 - Meurthe-et-Moselle - Nancy</option>
+            <option>   55 - Meuse - Bar-le-Duc</option>
+            <option>   56 - Morbihan - Vannes</option>
+             <option>  57 - Moselle - Metz</option>
+            <option>   58 - Nièvre - Nevers</option>
+            <option>   59 - Nord - Lille</option>
+            <option>   60 - Oise - Beauvais</option>
+            <option>   61 - Orne - Alençon</option>
+            <option>   62 - Pas-de-Calais - Arras</option>
+            <option>   63 - Puy-de-Dôme - Clermont-Ferrand</option>
+            <option>   64 - Pyrénées Atlantiques - Pau</option>
+            <option>   65 - Hautes Pyrénées - Tarbes</option>
+            <option>   66 - Pyrénées Orientales - Perpignan</option>
+            <option>   67 - Bas-Rhin - Strasbourg</option>
+            <option>   68 - Haut-Rhin - Colmar</option>
+            <option>   69 - Rhône - Lyon</option>
+            <option>   70 - Haute Saône - Vesoul</option>
+            <option>   71 - Saône-et-Loire - Mâcon</option>
+            <option>   72 - Sarthe - Le Mans</option>
+            <option>   73 - Savoie - Chambéry</option>
+            <option>   74 - Haute Savoie - Annecy</option>
+            <option>   75 - Paris - Paris</option>
+            <option>   76 - Seine Maritime - Rouen</option>
+            <option>   77 - Seine-et-Marne - Melun</option>
+            <option>   78 - Yvelines - Versailles</option>
+            <option>   79 - Deux-Sèvres - Niort</option>
+            <option>   80 - Somme - Amiens</option>
+            <option>   81 - Tarn - Albi</option>
+            <option>   82 - Tarn-et-Garonne - Montauban</option>
+            <option>   83 - Var - Toulon</option>
+            <option>   84 - Vaucluse - Avignon</option>
+            <option>   85 - Vendée - La Roche-sur-Yon</option>
+            <option>   86 - Vienne - Poitiers</option>
+            <option>   87 - Haute Vienne - Limoges</option>
+            <option>   88 - Vosges - Épinal</option>
+            <option>   89 - Yonne - Auxerre</option>
+            <option>   90 - Territoire de Belfort - Belfort</option>
+            <option>   91 - Essonne - Evry</option>
+            <option>   92 - Hauts-de-Seine - Nanterre</option>
+            <option>   93 - Seine-St-Denis - Bobigny</option>
+            <option>   94 - Val-de-Marne - Créteil</option>
+            <option>   95 - Val-D'Oise - Pontoise</option>
+            <option>   971 - Guadeloupe - Basse-Terre</option>
+            <option>   972 - Martinique - Fort-de-France</option>
+            <option>   973 - Guyane - Cayenne</option>
+            <option>   974 - La Réunion - Saint-Denis</option>
+            <option>   976 - Mayotte - Mamoudzou</option>
+       </select>
+
+        <div class="answers">
+
+            <div onclick="next()" class="emoji" id="suivant_arrivee">
+                <h4>Suivant</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="5" class="slide">
+
+        <h3>Que voulez vous transporter?</h3>
+
+        <div id="a5" class="answers">
+            <div onclick="next()" class="emoji" id="emoji">
+                <h4>Marchandise</h4>
+            </div>
+            <div onclick="next()" class="emoji" id="emoji">
+                <h4>Particulier</h4>
+            </div>
+        </div>
+    </div>
+    <!--End of question 4-->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
